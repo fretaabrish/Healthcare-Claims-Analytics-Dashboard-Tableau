@@ -1,57 +1,102 @@
-# 🏥 Healthcare Claims Dashboard
+# **Healthcare-Claims-Dashboard**
 
-An interactive **Tableau dashboard** analyzing synthetic healthcare claim data to visualize trends in claim outcomes, payment performance, payer mix, and top rejection reasons.  
-Data cleaning and preprocessing were performed using **Python**.
-
----
-
-## 📊 Dashboard Preview
-![Healthcare Claims Dashboard](images/dashboard_preview.png)
+📋 **Project Overview**  
+A data visualization project showcasing **healthcare claim performance insights** through an interactive **Tableau dashboard**, built using a **synthetic healthcare claims dataset from Kaggle**.  
+The dashboard consolidates key metrics — **Total Claims, Total Charges, Paid %, and Denial Rate** — and enables dynamic exploration by **insurance type, physician, and claim status** through interactive visual filters.
 
 ---
 
-## ⚙️ Tools & Technologies
-- **Python (Pandas, NumPy)** – data cleaning and preprocessing  
-- **Tableau Desktop / Tableau Public** – dashboard design and visualization  
-- **Jupyter Notebook** – exploratory data analysis  
-- **Kaggle Dataset** – synthetic healthcare claim dataset (no real patient data)
+🖼️ **Dashboard Preview**  
+<p align="center">
+  <img src="Healthcare-Claim-Dashboard-Screenshot.png" alt="US Sales Dashboard" width="80%" />
+</p>  
 
 ---
 
-## 🧹 Data Preparation in Python
+🎯 **Objectives**
+- Analyze claim outcomes (Paid, Partially Paid, Denied) to identify performance trends.  
+- Evaluate payment efficiency across insurance types and payors.  
+- Investigate top claim rejection reasons and physician performance.  
+- Demonstrate expertise in healthcare data analytics, Tableau design, and KPI storytelling.
 
-Key cleaning and transformation steps included:
-- Removed duplicates and standardized column names  
-- Handled missing and invalid claim values  
-- Computed **Paid %**, **Denial Rate**, and **Claim Duration** metrics  
-- Mapped insurance and outcome categories for Tableau analysis  
+---
 
-## 📈 Key Insights
+📊 **Key Insights**
+- 💰 **Total Claims:** 1,000  
+- 💵 **Paid Rate:** 68% of total claims successfully reimbursed.  
+- 🚫 **Denial Rate:** 66.6%, driven by billing and authorization issues.  
+- 🏦 **Top Payers:** Medicaid and Commercial plans contributed the highest total payments.  
+- 👨‍⚕️ **Physician Performance:** Top 5 physicians maintained an 88%+ claim approval rate.  
+- 📄 **Top Rejection Reasons:** Authorization not obtained, incorrect billing info, and patient eligibility issues.
 
-- Overall Paid Rate: 68% of total claims were paid
+---
 
-- Denial Rate: 66.6%
+⚙️ **Process**
 
-- Top Payers: Medicaid and Commercial plans
+### **1. Data Source**
+- a href="https://github.com/fretaabrish/Healthcare-Claims-Analytics-Dashboard-Tableau/blob/main/Health_claim_raw_data.csv"> *Synthetic Health claim raw data Kaggle*</a>
+  > Randomly generated for educational and analytical practice; contains no real patient data.
 
-- Top Rejection Reasons: Missing authorization and incorrect billing info
+### **2. Data Preparation**
+- Cleaned and structured data using **Python (Pandas, NumPy)**.  
+- Standardized columns, parsed date formats, and handled missing or inconsistent values.  
+- Computed derived metrics including **Paid %, Denial Rate, and Claim Duration**.
 
-- Top 5 Physicians: Maintained 88%+ paid claim success rate
 
-## 🖥️ Tableau Dashboard Highlights
+### **3. Dashboard Development**
+- Designed KPI cards for **Total Claims, Paid %, and Denial Rate**.  
+- Created visuals for:  
+  - **Outcome Distribution** (Donut Chart)  
+  - **Claim Trends by Status** (Line Chart)  
+  - **Top Payers by Total Paid Amount** (Bar Chart)  
+  - **Claim Status by Insurance Type** (Stacked Bar Chart)  
+  - **Top Rejection Reasons** (Horizontal Bar Chart)  
+  - **Physician Performance** (Bar Chart)  
+- Integrated interactive filters for **Claim Status**, **Insurance Type**, and **Physician** to support exploratory analysis.
 
-- KPI Summary Cards: Total Claims, Paid %, Denial Rate
+---
 
-- Donut Chart: Outcome Distribution (Paid, Partially Paid, Denied)
+🛠️ **Tools & Technologies**
+- **Visualization:** Tableau  
+- **Data Preparation:** Python (Pandas, NumPy, Jupyter Notebook)  
+- **Data Source:** Kaggle Synthetic Healthcare Claims  
 
-- Line Charts: Claims Trend & Accounts Receivable Trend
+---
 
-- Bar Charts: Top Payers, Top Rejection Reasons, Physician Performance
+📈 **Results**
+- Built a **clean and interactive dashboard** presenting financial and operational claim metrics.  
+- Identified key drivers of claim denials and payer performance trends.  
+- Delivered actionable insights supporting claim management and billing optimization.  
+- Demonstrated expertise in **healthcare analytics, dashboard storytelling, and metric design**.
 
-- Interactive Filters by Insurance Type and Claim Status
+---
 
-## 📚 Dataset
+💡 **Skills Demonstrated**
+- Healthcare Data Wrangling and Quality Checks  
+- KPI Computation (Paid %, Denial Rate, Top Payers)  
+- Interactive Dashboard Development in Tableau  
+- Analytical Storytelling and Insight Communication  
+- Visualization and UI/UX Design Best Practices  
 
-- Synthetic healthcare claim dataset from Kaggle (for training and demonstration purposes only).
+---
 
-- Note: This dataset contains no real patient information.
+🧩 **How to Use**
+1. View the **dashboard screenshot** above for a quick overview of the visual insights.
+2. Explore the supporting data and scripts in the repository folders.
+3. Optionally, recreate or enhance the dashboard using the dataset provided.
+
+---
+
+📚 **Dataset Reference**
+**Kaggle:** Synthetic Healthcare Claims Dataset  
+> *This dataset is randomly generated and suitable for educational and demonstration purposes only. No real patient data is included.*
+
+---
+
+👤 **Author**
+**Frew Berhe**  
+📍 Data Scientist | Healthcare & Machine Learning Analytics  
+🔗 [LinkedIn](https://www.linkedin.com/in/frewberhe)  
+💻 [GitHub](https://github.com/fretaabrish)
+
+⭐ If you find this project helpful, consider giving it a **star**!
